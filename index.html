@@ -38,7 +38,7 @@
 
         body {
             /* Cyber-Rose & Deep Emerald Palette */
-            background: radial-gradient(circle at 50% 10%, #2a081c 0%, #09040e 60%, #020c0a 100%);
+            background: radial-gradient(circle at 50% 0%, #2a081c 0%, #09040e 60%, #020c0a 100%);
             color: #ffffff;
             display: flex;
             justify-content: center;
@@ -335,10 +335,10 @@
         <h1 class="title">Trade With Zerox</h1>
         <p class="subtitle">Next-Gen Market Analysis & VIP Hub</p>
 
-        <!-- TOP CTA BUTTON (NATIVE REDIRECT & TRACKING FOR LEAD CAMPAIGN) -->
-        <a id="join-telegram-btn" href="https://t.me/+fbfonbcevLQ5MjJl" class="cta-btn">
+        <!-- TOP CTA BUTTON (NATIVE REDIRECT & TRACKING) -->
+        <a id="join-telegram-btn" href="https://t.me/+EL4JloH-dLw5YTg9" class="cta-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-            Join Telegram Now
+            Join Telegram Channel
         </a>
 
         <!-- 2x2 BENTO PERKS -->
@@ -369,12 +369,12 @@
 
     </div>
 
-    <!-- TRACKING SCRIPT: UPDATED TO FIRE 'Lead' EVENT FOR LEAD CAMPAIGN -->
+    <!-- TRACKING SCRIPT: EXACT NATIVE EVENT TRACK -->
     <script>
         document.getElementById('join-telegram-btn').addEventListener('click', function() {
-            // Fires Lead event immediately on button tap for Lead Conversion Campaigns
+            // Fires Subscribe event immediately for Meta Engagement Ad
             if (typeof fbq === 'function') {
-                fbq('track', 'Lead');
+                fbq('track', 'Subscribe');
             }
         });
     </script>
